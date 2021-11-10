@@ -74,9 +74,14 @@ body, html{
 
 #text p{
     display: inline-flex;
-    padding: 30px;
+    margin-top: 20px;
     font-size: 18px;
     justify-content: space-around;
+}
+
+#text p b{
+letter-spacing: 2px;
+word-spacing: 1200px;
 }
 
 @keyframes move {
