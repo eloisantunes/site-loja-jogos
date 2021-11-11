@@ -1,28 +1,32 @@
 /*
-var slideIndex = 1;
-showSlides(slideIndex);
+var carouselInner = 2;
+showSlides(carouselInner);
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(carouselInner += n);
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides(carouselInner = n);
 }
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
+    var slides = document.getElementById("carouselIndicators");
+    var dots = document.getElementByClassName("carousel-inner");
 
-    if (n > slides.length) {slideIndex=1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {carouselInner=1}
+    if (n < 1) {carouselInner = slides.length}
     for (1=0; i<slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i=0; i < dots.length; i++) {
         dots[i].className= dots[i].className.replace("active", "");
     }
-    slides[slideIndex -1].style.display = "block";
-    dots[slideIndex -1].className += "active";
+    slides[carouselInner -1].style.display = "block";
+    dots[carouselInner -1].className += "active";
 } */
+
+$('.carousel').carousel({
+    interval: 2000
+  })
