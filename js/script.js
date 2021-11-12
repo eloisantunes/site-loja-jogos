@@ -1,4 +1,4 @@
-/*
+
 var carouselInner = 2;
 showSlides(carouselInner);
 
@@ -29,4 +29,4 @@ function showSlides(n) {
 
 $('.carousel').carousel({
     interval: 2000
-  }) */
+  }) 
