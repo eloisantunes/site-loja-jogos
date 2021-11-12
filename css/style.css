@@ -46,9 +46,10 @@ body, html{
 #menu-h{
     object-position: 100%;
     width: 100%;
+    text-orientation: center;
     list-style: none;
-    background-color: rgb(95, 185, 20);
-    font-weight: bold;
+    background-color: rgba(95, 25, 25, 0.938);
+    font-weight: 500;
     font-size: 20px;
     display: block;
 }
@@ -61,22 +62,23 @@ body, html{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-items: center;
     padding: 30px 70px;
     color: rgb(0, 0, 0);
     display: inline-block;
-    justify-content: space-around;
     transition: background .2;
 }
 
 #menu-h li a:hover{
-    background-color: chartreuse; 
+    background-color: rgba(131, 32, 32, 0.486); 
 }
 
 #text p{
+    padding: 2rem;
     display: inline-flex;
-    margin-top: 20px;
-    font-size: 18px;
-    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 20px;
 }
 
 #text p b{
