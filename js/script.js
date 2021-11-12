@@ -25,8 +25,8 @@ function showSlides(n) {
     }
     slides[carouselInner -1].style.display = "block";
     dots[carouselInner -1].className += "active";
-} */
+} 
 
 $('.carousel').carousel({
     interval: 2000
-  })
+  }) */
