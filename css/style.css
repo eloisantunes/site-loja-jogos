@@ -85,14 +85,18 @@ panel{
 
 #text p{
     padding: 2rem;
-    display: inline-flex;
-    margin-top: 15px;
-    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    animation: move 500ms ease-in;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
-#text p b{
-letter-spacing: 2px;
-word-spacing: 1200px;
+#text p i{
+    padding: 5px;
+    display: inline-block;
+    color: rgba(24, 38, 64);
 }
 
 @keyframes move {
@@ -106,33 +110,26 @@ word-spacing: 1200px;
     }
 }
 
-#text p{
-    animation: move 500ms ease-in
-}
-
-.titulo{
-    margin-left: center;
+.emphasis{
     text-align: center;
+    text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 2rem;
     position: relative;
+    margin-top: -22px;
     }
     
-.titulo::before{
+.emphasis::before{
     content: '';
     position: absolute;
     height: 4px;
-    width: 100%;
-    bottom: 3px;
-    left: 0;
+    width: 80px;
+    margin-top: 38px;
     border-radius: 8px;
-    background: chartreuse;
+    background: rgba(24, 38, 64);
 }
 
-figcaption{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
+.preco-promocional, .preco-parcela{
+    display: inline-block;
 }
 
 main.container{
@@ -228,6 +225,87 @@ form input[type='submit']:hover{
     letter-spacing: 0.5px;
     background: linear-gradient(to right, rgb(95, 185, 20), chartreuse);
 }
+
+#footer{
+    padding: 50px 0 30px;
+}
+
+hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(24, 38, 64);
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+
+.footer-right-col{
+    flex-basis: 35%;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4{
+    color: rgba(24, 38, 64);
+    margin-bottom: 20px;
+}
+
+.link-title small{
+    color: #777;
+    font-size: 13px;
+}
+
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.copyright-text, .footer-Logo{
+    flex-basis: 40%;
+}
+
+.footer-Logo img{
+    width: 100px;
+}
+
+.footer-Logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+/*---Social icones---*/
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.social-icons img{
+    width: 30px;
+    display: block;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
 
 .footer{
     display: flex;
