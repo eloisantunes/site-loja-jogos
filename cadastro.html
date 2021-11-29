@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cadastro de Jogos</title>
+
+    <script>
+        
+        function exibir(){
+            alert("Você clicou em EXIBIR.")
+        }
+        function cadastrar(){
+            alert("Você clicou em CADASTRAR.")
+        }
+        function atualizar(){
+            alert("Você clicou em ATUALIZAR.")
+        }
+        function apagar(){
+            alert("Você clicou em APAGAR.")
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <div class="db-games">
+        <form action="">
+            <label>ID:</label><input type="number">
+            <label>NOME DO JOGO:</label><input type="text">
+            <label>TIPO:</label><input type="text">
+            <label>EMPRESA DESENVOLVEDORA:</label><input type="text">
+
+            <div class="btn-box">
+                <button class="common-btn" id="btn_exibir" onclick="exibir()" >EXIBIR</button>
+                <button class="common-btn" id="btn_cadastrar" onclick="cadastrar()">CADASTRAR</button>
+                <button class="common-btn" id="btn_atualizar" onclick="atualizar()">ATUALIZAR</button>
+                <button class="common-btn" id="btn_apagar" onclick="apagar()">APAGAR</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

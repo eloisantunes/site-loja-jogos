@@ -391,5 +391,27 @@ hr{
         transition: .5s;
     }
 
+    form input{
+        display: block;
+    }
+
+    form{
+        margin: 50px 300px;
+        padding: 10px;
+    }
+
+    .btn-box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    
+    .btn-box button{
+        flex-basis: content;
+        padding: 8px 50px;
+    }
+    
+
     
 
