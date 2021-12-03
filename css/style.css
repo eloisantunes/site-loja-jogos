@@ -52,10 +52,6 @@ nav ul li a{
     cursor: pointer;
 }
 
-#carousel{
-    transition: 2s ease;
-}
-
 .campo-busca{
     display: block;
     margin-top: 10%;
