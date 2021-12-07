@@ -136,10 +136,6 @@ main h2::before{
     bottom: 3px;
     left: 0;
     border-radius: 8px;
-    background: chartreuse;
-}
-
-form{
     display: flex;
     flex-direction: column;
 }
